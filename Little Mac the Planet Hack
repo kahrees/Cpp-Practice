@@ -1,0 +1,69 @@
+#include <iostream>
+
+int main() {
+  
+  
+  
+  double EarthWeight;
+  int PlanetNumber;
+  
+  
+  std::cout << "Enter weight on Earth: \n";
+  std::cin >> EarthWeight;
+  
+  std::cout << "Planet Numbers are Venus=1, Mars=2, Jupiter=3, Saturn=4, Uranus=5, Neptune=6  \n";
+  
+  std::cout << "Enter Planet Number: \n";
+  std::cin >> PlanetNumber;
+  
+  
+  switch(PlanetNumber) {
+      
+    case 1 : 
+    std::cout << "Your weight is " << 0.78*EarthWeight << "\n";
+break;
+    
+    case 2 : 
+    std::cout << "Your weight is " << 0.39*EarthWeight << "\n";
+break;
+    
+    case 3 : 
+    std::cout << "Your weight is " << 2.65*EarthWeight << "\n";
+break;
+    
+    case 4 : 
+    std::cout << "Your weight is " << 1.17*EarthWeight << "\n";
+break;
+    
+    case 5 : 
+    std::cout << "Your weight is " << 1.05*EarthWeight << "\n";
+break;
+    
+    case 6 : 
+    std::cout << "Your weight is " << 1.23*EarthWeight << "\n";
+break;
+    
+    default :
+      std::cout << "Unknown\n";
+      break;
+      
+  }
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
