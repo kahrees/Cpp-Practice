@@ -1,0 +1,127 @@
+#include <iostream>
+
+/* 
+Mad Libs Theatre based on
+this YouTube video: https://www.youtube.com/watch?v=kM9Wuzj4k24
+Mad Lib Theater with Benedict Cumberbatch on 
+The Tonight Show Starring Jimmy Fallon
+*/
+
+int main() {
+  std::cout << "Hello User!\n";
+
+// The Words We Need 
+// Could I have made this a function?
+
+
+
+  std::string Name,FaveTeacher,Exclamation, Objects,Store,BodyPart,Silly,Holiday,Movie,Verb,Distance,Country,Animal,MovieQuote,ABodyPart,Song,Adjective;
+  
+int Number;
+  
+std::cout << "Input a name please!\n";
+   getline(std::cin, Name);
+
+std::cout << "Input the name of your favourite teacher please!\n";
+   getline(std::cin, FaveTeacher);
+   
+std::cout << "Input an exclamation please!\n";
+   getline(std::cin, Exclamation); 
+
+std::cout << "Input a number please!\n";
+  std::cin >> Number; 
+
+std::cout << "Input a plural object please!\n";
+   getline(std::cin, Objects); 
+
+/* For some reason, the code does not allow me 
+to input a plural object.
+Can anyone help me please
+*/
+std::cout << "Input a store name please!\n";
+   getline(std::cin, Store); 
+
+std::cout << "Input a body part please!\n";
+   getline(std::cin,BodyPart);    
+
+std::cout << "Input a silly word please!\n";
+   getline(std::cin,Silly);    
+
+std::cout << "Input the name of a holiday please!\n";
+   getline(std::cin,Holiday);
+
+std::cout << "Input a movie title please!\n";
+   getline(std::cin, Movie);  
+
+std::cout << "Input a verb ending in '-ing'!\n";
+   getline(std::cin, Verb); 
+
+std::cout << "Input a distance please! (EG 5 feet, 2 metres)\n";
+   getline(std::cin,Distance);
+
+std::cout << "Input a country please!\n";
+   getline(std::cin,Country);
+
+std::cout << "Input an animal please!\n";
+   getline(std::cin, Animal);  
+
+std::cout << "Input a famous movie quote please!\n";
+   getline(std::cin, MovieQuote); 
+
+std::cout << "Input another (yes, another) body part please!\n";
+   getline(std::cin, ABodyPart);   
+
+std::cout << "Input a children's song!\n";
+   getline(std::cin, Song);  
+
+std::cout << "Input an adjective please!\n";
+   getline(std::cin, Adjective);  
+
+
+  
+//Now, the scene  
+
+
+std::cout << "/////////////// \n";
+std::cout << "Begin Scene \n";
+std::cout << "\\\\\\\\\\\\\\ \n\n";
+  
+std::cout << "The Detective: Hello, I am Detective " << Name << ". And you are?\n\n";
+
+std::cout << "The Suspect: " << FaveTeacher << ".\n\n";
+
+std::cout << "The Detective: You're here under suspicion of second degree robbery. \n\n";
+
+std::cout << "The Suspect: " << Exclamation << "!\n\n";
+ 
+std::cout << "The Detective: That's right! " << Number << " " << Objects << " were stolen from " << Store << "! And the crime scene has your " << BodyPart << " all over it! \n\n";
+
+std::cout << "The Suspect: That is " << Silly << "!\n\n";
+
+std::cout << "The Detective: Where were you on the night of " << Holiday << "?\n\n";
+
+std::cout << "The Suspect: We was watching " << Movie << "!\n\n";
+
+std::cout << "The Detective: Then why does security camera footage show you "  << Verb << " just " << Distance <<  " away from the crime scene?\n\n";
+
+std::cout << "The Detective: You know what? I'm through playing games! Where are you from? \n\n";
+
+std::cout << "The Suspect: "  << Country << ".\n\n";
+
+std::cout << "The Detective: Just as I suspected! You know, one of the best parts of being a detective is that I get to lock up criminals like you and go home to my children and my pet " << Animal << " and say " << MovieQuote << "! \n\n";
+
+std::cout << "The Suspect: Fine, I did it! I committed the robbery! But! I only did it because I needed the money for " << ABodyPart << " implants! \n\n"; 
+
+std::cout << "The Detective: I knew it all along! I knew it all along! And every time I solve a crime, I like to sing my favourite song!\n\n";
+
+ std::cout << "*The Detective and Suspect Together begin singing " << Song << "*\n\n";
+
+std::cout << "The Suspect: You have a " << Adjective << " voice!\n\n";  
+
+
+std::cout << "/////////////// \n";
+std::cout << "End Scene \n";
+std::cout << "\\\\\\\\\\\\\\ \n";
+
+  
+}
