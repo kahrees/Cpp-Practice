@@ -38,6 +38,7 @@ std::cout << "Input a plural object please!\n";
 to input a plural object.
 Can anyone help me please?
 */
+
 std::cout << "Input a store name please!\n";
    getline(std::cin, Store); 
 
