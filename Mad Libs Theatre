@@ -15,9 +15,8 @@ int main() {
 
 
 
-  std::string Name,FaveTeacher,Exclamation, Objects,Store,BodyPart,Silly,Holiday,Movie,Verb,Distance,Country,Animal,MovieQuote,ABodyPart,Song,Adjective;
+  std::string Name,FaveTeacher,Exclamation, Number, Objects,Store,BodyPart,Silly,Holiday,Movie,Verb,Distance,Country,Animal,MovieQuote,ABodyPart,Song,Adjective;
   
-int Number;
   
 std::cout << "Input a name please!\n";
    getline(std::cin, Name);
@@ -29,15 +28,10 @@ std::cout << "Input an exclamation please!\n";
    getline(std::cin, Exclamation); 
 
 std::cout << "Input a number please!\n";
-  std::cin >> Number; 
+   getline(std::cin, Number); 
 
 std::cout << "Input a plural object please!\n";
    getline(std::cin, Objects); 
-
-/* For some reason, the code does not allow me 
-to input a plural object.
-Can anyone help me please?
-*/
 
 std::cout << "Input a store name please!\n";
    getline(std::cin, Store); 
