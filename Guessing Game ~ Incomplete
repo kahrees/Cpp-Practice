@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+  cout << "\n";
+
+string Answer;
+int tries = 0;
+
+  cout << "Riddle Time!\n\n";
+
+  cout << "Answer this riddle: \n";
+  cout << "What kind of tree can you carry in your hand?\n\n";
+
+ cout << "You have three tries :)\n\n";
+
+ do {
+
+cout << "Please enter an answer :)\n";
+   getline(std::cin, Answer);
+   tries++;
+
+
+   if (Answer == "a palm tree" || Answer == "palm tree" || Answer == "palm")
+    {
+cout << "You got it right!";}
+
+else if (Answer != "a palm tree" || Answer != "palm tree" || Answer != "palm"){ cout << "You got it wrong.\n\n";
+
+}
+
+else (tries > 3);{
+  cout << "Sorry. You have exhausted your tries. \n The answer is a palm tree.";
+
+ };
+}
+while (tries <= 3);
+{cout << "Please enter an answer :) \n";
+getline(std::cin, Answer);}
+
+
+}
+
+
+
