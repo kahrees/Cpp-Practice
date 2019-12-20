@@ -1,0 +1,50 @@
+#include <iostream>
+
+int main() {
+
+float num1;
+float num2;
+char Operator;
+
+std::cout << "Please enter a number \n\n";
+std::cin >> num1;
+
+std::cout << "Please enter another number \n\n";
+std::cin >> num2;
+
+std::cout << "Please enter a mathematical operator \n";
+std::cout << "Choose from '+', '-', '*', '/' \n\n";
+std::cin >> Operator;
+
+
+std::cout << "Your first number was " << num1 << " \n\n";
+std::cout << "Your second number was " << num2 << " \n\n";
+std::cout << "Your operator was " << Operator << " \n\n";
+  
+
+switch(Operator){
+
+case '+':
+std::cout<<"Your answer is: " << num1 + num2<<"\n";
+break;
+
+case '-':
+std::cout<<"Your answer is: " << num1 - num2<< "\n";
+break;
+
+case '*':
+std::cout<<"Your answer is: "<< num1 * num2<< "\n";
+break;
+
+case '/':
+std::cout<<"Your answer is: "<< num1 / num2 << "\n";
+break;
+
+default:
+std::cout<<"Error! Please put in a proper operator! \n";
+
+}
+
+
+
+}
