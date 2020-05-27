@@ -1,67 +1,68 @@
-#include 
+#include  <iostream>
 #include <stdlib.h>
+using namespace std;
 
 int main() {
 
 // Let us begin.
 
-std::cout << "======================\n";
-std::cout << "Rock, Paper, Scissors!\n";
-std::cout << "======================\n";
+cout << "======================\n";
+cout << "Rock, Paper, Scissors!\n";
+cout << "======================\n";
 
-std::cout << "Choose, choose if you will!\n";
-std::cout << "1) Rock\n";
-std::cout << "2) Paper\n";
-std::cout << "3) Scissors\n";
+cout << "Choose, choose if you will!\n";
+cout << "1) Rock\n";
+cout << "2) Paper\n";
+cout << "3) Scissors\n";
 
-std::cout << "Choose wisely. :)\n";
+cout << "Choose wisely. :)\n";
 
 int user = 0;
 std::cin >> user;
 
 // User Choices
 if (user == 1)
-std::cout << "You chose: Rock!\n";
+cout << "You chose: Rock!\n";
 else if (user == 2)
-std::cout << "You chose: Paper!\n";
+cout << "You chose: Paper!\n";
 else
-std::cout << "You chose: Scissors!\n";
+cout << "You chose: Scissors!\n";
 
 // Computer's Turn
 srand (time(NULL));
 
 int computer = rand() % 3 + 1;
 
-std::cout << rand() % 3 + 1 << "\n";
+cout << rand() % 3 + 1 << "\n";
 
 // Computer's Choices
 if (computer == 1)
-std::cout << "CPU chose: Rock!\n";
+cout << "CPU chose: Rock!\n";
 else if (computer == 2)
-std::cout << "CPU chose: Paper!\n";
+cout << "CPU chose: Paper!\n";
 else
-std::cout << "CPU chose: Scissors\n";
+cout << "CPU chose: Scissors\n";
 
 // The Decision
 
 if (user == computer) {
 
-std::cout <<"A tie! Please try again.\n";}
+cout <<"A tie! Please try again.\n";}
 // Computer Rock
 else if (computer == 1) {
 
-if (user == 2) { std::cout << "Hurrah! You Won! =D \n";}
+if (user == 2) { cout << "Hurrah! You Won! =D \n";}
 
-if (user == 3) { std::cout << "Alas! You lost. You can try again. :) \n";}
+if (user == 3) { cout << "Alas! You lost. You can try again. :) \n";}
 
    }  
 // Computer Paper
 
   else if (computer == 2) {
 
-if (user == 1) {"Alas! You lost. You can try again. :) \n";  }
+if (user == 1) {cout << "Alas! You lost. You can try again. :) \n";  }
   
-if (user == 3) {"Hurrah! You Won! =D \n";
+if (user == 3) {cout << "Hurrah! You Won! =D \n";
 }
 
   } 
@@ -69,13 +70,15 @@ if (user == 3) {"Hurrah! You Won! =D \n";
 else if (computer == 3) {
 
 if (user == 1) {
-std::cout << "Hurrah! You Won! =D \n";}
+cout << "Hurrah! You Won! =D \n";}
 
 if (user == 2) {
-std::cout << "Alas! You lost. You can try again. :) \n";}
+cout << "Alas! You lost. You can try again. :) \n";}
   }
                 
                 
 return 0;
     
-  }  
+  }
+
+  
